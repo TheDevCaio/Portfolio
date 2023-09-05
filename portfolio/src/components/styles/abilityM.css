@@ -1,0 +1,134 @@
+.ability-menu {
+    width: 31.2rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    right: 5vw;
+    align-items: flex-end;
+  }
+  
+  .ability-item {
+    height: 3.7rem;
+    width: 55%;
+    display: flex;
+    position: relative;
+    justify-content: inline;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .ability-title {
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .activeAbility {
+    display: inline-flex; /* Torna os itens flex containers quando a classe .activeAbility estiver presente */
+    size: 2rem;
+    cursor: default;
+  }
+
+ 
+  
+  .ability-sub-container-1 h3,
+  .ability-sub-container-2 h3 {
+    position: relative;
+    margin: 0;
+  }
+  
+  .menu {
+    width: 10rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translateY(-25%);
+    right: 15vw;
+  }
+  
+  .ability-sub-container-1,
+  .ability-sub-container-2 {
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+  }
+  
+  .level-container {
+    display: flex;
+    gap: 0.3rem;
+  }
+  
+  .level-point {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+  
+  .filled {
+    background: linear-gradient(180deg, #383b3b, #000000, #262620);
+  }
+  .unfilled {
+    background: linear-gradient(180deg, #8e9698, #91a4a8, #8da0a5);
+  }
+  
+  .ability-sub-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  
+  @media (max-width: 1100px) {
+    .ability-item.activeAbility .ability-title {
+      font-size: 1rem;
+    }
+ 
+    .level-point {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+    }
+    .level-container {
+      gap: 0.15rem;
+    }
+    .ability-sub-container-1,
+    .ability-sub-container-2 {
+      gap: 0.5rem;
+    }
+    .ability-sub-container {
+      margin-top: 2rem;
+      gap: 0.2rem;
+    }
+    h1 {
+      font-size: 0.8rem;
+    }
+    h2,
+    h3,
+    p {
+      font-size: 0.7rem;
+    }
+    .ability-menu {
+      flex-direction: column;
+      left: 50%;
+      transform: translateX(-50%);
+      align-items: center;
+      top: 15%;
+    }
+    .ability-item {
+      margin-top: 2vw;
+      height: 2rem;
+      width: 12em;
+      transform: translateX(2%);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .menu {
+      width: 10rem;
+      top: 20%;
+      left: 40%;
+      transform: translateY(-50%);
+    }
+  }
