@@ -1,0 +1,58 @@
+
+.custom-nav-bar {
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    top: 15rem; /* Ajuste a posição vertical conforme necessário */
+    left: 10%; /* Ajuste a posição horizontal conforme necessário */
+    background-color: #333; /* Cor de fundo do NavBar personalizado */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-nav-bar a {
+    width: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+  }
+  
+  .custom-nav-bar .page-title {
+    font-size: 0.875rem;
+    color: white;
+    cursor: default;
+  }
+  
+  .custom-nav-bar .nav-link {
+    opacity: 0.7;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .custom-nav-bar .nav-link:hover {
+    opacity: 1;
+  }
+  
+  .custom-nav-bar .nav-link.current {
+    opacity: 1;
+  }
+  
+  /* Estilos para dispositivos com largura menor que 1100px */
+  @media (max-width: 1100px) {
+    .custom-nav-bar {
+      top: calc(100vh - 5rem);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .custom-nav-bar a {
+      width: 2rem;
+    }
+  
+    .custom-nav-bar .page-title {
+      display: none;
+    }
+  }
