@@ -4,7 +4,7 @@ export default class MyContact extends Component {
   render() {
     return (
       <>
-        <Projects className = "nav-contact" page="contact" />
+        <Projects className = "nav-contact" pages="contact"  />
       </>
     );
   };
