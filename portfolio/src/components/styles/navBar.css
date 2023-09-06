@@ -29,9 +29,17 @@
   }
   
   .nav-contact {
-    transform: translateX(-15.62rem);
+    transform: TranslateX(+22rem);
   }
-  
+
+  .nav-skills-contact {
+    transform: TranslateX(+22rem);
+  }
+
+
+  .nav-contact {
+    transform: translateX(23rem);
+  }
   a {
     width: 3.125rem;
     display: flex;
@@ -82,4 +90,3 @@
       display: none;
     }
   }
-  

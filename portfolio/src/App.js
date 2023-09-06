@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import NavBar from './components/navBar/NavBar';
 import BackgroundMain from './components/background/BackgroundMain';
 import Info from './components/info/Info';
@@ -8,52 +8,68 @@ import GameIndex from './components/gameIndex/GameIndex';
 import Projects from './components/projects/ProjectsM';
 
 const App = () => {
+  const isAuthenticated = true; // Defina como verdadeiro se o usuário estiver autenticado
+
   return (
     <Router>
       <Routes>
-        {/* Rota principal */}
         <Route
           path="/"
           element={
-            <>
-              <NavBar />
-              <BackgroundMain />
-              <Info />
-              <GameIndex /> {/* Renderiza o GameIndex apenas quando a rota é / */}
-            </>
-          }
-        />
-        {/* Rota de habilidades */}
-        <Route path="/skills" element={<><><Abilitys /><BackgroundMain /></><NavBar /></>} />
-
-        <Route
-          path="projects"
-          element={
-            <>
-              <NavBar className="nav-projects-fixed" /> {/* Adicione a classe nav-projects-fixed aqui */}
-              <Projects /> 
-              <BackgroundMain />
-            </>
+            isAuthenticated ? (
+              <>
+                <NavBar />
+                <BackgroundMain />
+                <Info />
+                <GameIndex />
+              </>
+            ) : (
+              <Navigate to="/" replace={true} />
+            )
           }
         />
 
         <Route
-          path="projects/contact"
+          path="/skills"
           element={
-            <>
-              <NavBar /> 
-              <BackgroundMain />
-            </>
+            isAuthenticated ? (
+              <>
+                <NavBar />
+                <Abilitys />
+                <BackgroundMain />
+              </>
+            ) : (
+              <Navigate to="/" replace={true} />
+            )
           }
         />
 
         <Route
-          path="contact"
+          path="/projects"
           element={
-            <>
-              <NavBar /> 
-              <BackgroundMain />
-            </>
+            isAuthenticated ? (
+              <>
+                <NavBar className="nav-projects-fixed" />
+                <Projects />
+                <BackgroundMain />
+              </>
+            ) : (
+              <Navigate to="/" replace={true} />
+            )
+          }
+        />
+
+        <Route
+          path="/contact"
+          element={
+            isAuthenticated ? (
+              <>
+                <NavBar />
+                <BackgroundMain />
+              </>
+            ) : (
+              <Navigate to="/" replace={true} />
+            )
           }
         />
       </Routes>

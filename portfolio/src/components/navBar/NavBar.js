@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Link, useLocation } from "react-router-dom";
-import astronautHelmet from "../../assets/astronaut-helmet.png";
-import deadEye from "../../assets/dead-eye.png";
-import stack from "../../assets/stack.png";
-import envelope from "../../assets/envelope.png";
+import user from "../../assets/user.png";
+import infos from "../../assets/infos.png";
+import projects from "../../assets/projects.png";
+import contact from "../../assets/envelope.png";
 import "../styles/navBar.css";
 
 export default function Nav() {
@@ -59,16 +59,16 @@ export default function Nav() {
   };
 
   return (
-    <nav className={`nav ${navPosition}`}>
+    <nav id = "user" className={`nav ${navPosition}`}>
       {renderNavLink(
         "/",
-        astronautHelmet,
-        "astronaut helmet icon",
+        user,
+        "user",
         "nav-about"
       )}
-      {renderNavLink("/skills", deadEye, "deadEye icon", "nav-skills")}
-      {renderNavLink("/projects", stack, "stack icon", "nav-projects")}
-      {renderNavLink("contact", envelope, "envelope icon", "nav-contact")}
+      {renderNavLink("/skills", infos, "infos", "nav-skills")}
+      {renderNavLink("/projects", projects, "projects", "nav-projects")}
+      {renderNavLink("contact", contact, "contact", "nav-contact")}
     </nav>
   );
 }
