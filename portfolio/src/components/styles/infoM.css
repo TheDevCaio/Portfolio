@@ -1,5 +1,5 @@
 .infoM {
-    color: rgb(8, 3, 3);
+    color: rgb(0, 0, 0);
     width: 18rem;
     top: 30%;
     left: 65vw;
@@ -7,6 +7,7 @@
     transform: translateY(-60%);
     flex-direction: inline;
     display: flex;
+    text-shadow: 1px 2px rgba(255, 255, 255, 0.852);
      }
   
   .item {
@@ -15,6 +16,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    text-shadow: 1px 2px rgba(255, 255, 255, 0.852);
      }
 
      .mInfo {
@@ -30,6 +32,7 @@
       cursor: pointer;
       border-radius: 40px;
       position: fixed;
+      text-shadow: 1px 2px rgba(255, 255, 255, 0.852);
     }
   
   .T {
@@ -69,8 +72,15 @@
     .item.active .T {
       font-size: 1rem;
     }
+
+    .mInfo{
+      text-shadow: 1px 2px rgba(149, 137, 137, 0.852);
+    }
+
     .item {
+      text-shadow: 1px 2px rgba(165, 148, 148, 0.852);
       height: 2rem;
+      font-weight: bold;
     }
   }
   @media (max-width: 700px) {
@@ -109,6 +119,7 @@
 
     h1 {
       font-size: 4rem;
+      text-shadow: 1px 2px rgba(165, 148, 148, 0.852);
     }
 
     .global{

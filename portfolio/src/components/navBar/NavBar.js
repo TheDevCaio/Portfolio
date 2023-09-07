@@ -57,7 +57,6 @@ export default function Nav() {
     return (
       <Link to={to} className={linkClass}>
         <img src={imgSrc} alt={altText} />
-        {isCurrent && <h1 className="page-title">{pageTitle}</h1>}
       </Link>
     );
   };
@@ -72,7 +71,7 @@ export default function Nav() {
       )}
       {renderNavLink("/skills", infos, "infos", "nav-skills")}
       {renderNavLink("/projects", projects, "projects", "nav-projects")}
-      {renderNavLink("contact", contact, "contact", "nav-contact")}
+      {renderNavLink("/contact", contact, "contact", "nav-contact")}
     </nav>
   );
 }
