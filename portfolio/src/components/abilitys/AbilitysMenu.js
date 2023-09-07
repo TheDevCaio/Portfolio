@@ -19,19 +19,20 @@ export default class AbilityMenu extends Component {
 
   renderContent = (abilitys) => {
     return abilitys.map((abilitys, index) => (
-      <div
-        key={index}
-        className={`ability-sub-container-${this.state.activeMItem}`}>
-        <h3>{abilitys.name}</h3>
-        <div className="level-container">
-          {[...Array(6)].map((_, i) => (
-            <div
-              key={i}
-              className={`level-point ${
-                i < abilitys.level ? "filled" : "unfilled" }`}/>
-          ))}
-        </div>
-      </div>
+        <><h3 className="Global">{abilitys.name}</h3><div
+
+            key={index}
+
+            className={`ability-sub-container-${this.state.activeMItem}`}>
+
+            <div className="level-container">
+                {[...Array(6)].map((_, i) => (
+                    <div
+                        key={i}
+                        className={`level-point ${i < abilitys.level ? "filled" : "unfilled"}`} />
+                ))}
+            </div>
+        </div></>
     ));
   };
 
@@ -47,9 +48,11 @@ export default class AbilityMenu extends Component {
               activeAbility: activeMItem === index + 1, })}
             onClick={() => this.handleMItemClick(index + 1)}>
             <h2 className="ability-title">{item}</h2>
+          
           </div>))}
-        
+        <br></br>
         <div className="ability-sub-container">
+        <br></br>
           {this.renderContent(abilitys[activeMItem])}
         </div>
       </div>

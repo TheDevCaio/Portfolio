@@ -29,6 +29,7 @@
   }
   
   .nav-contact {
+    margin-block-start: 100px;
     transform: translateX(22rem); /* "TranslateX" deve ser em minúsculas */
   }
 
@@ -87,6 +88,9 @@
     .nav-link {
       width: 2rem;
     }
+    .nav-contact {
+        transform: translateX(-9rem) !important;
+      }
     .nav-link img {
       width: 2rem;
     }

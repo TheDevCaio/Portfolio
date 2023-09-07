@@ -17,10 +17,6 @@ const abilitys = {
         level: 5,
       },
       {
-        name: "SASS",
-        level: 2,
-      },
-      {
         name: "JavaScript",
         level: 5,
       },
@@ -29,8 +25,8 @@ const abilitys = {
         level: 1,
       },
       {
-        name: "Figma",
-        level: 2,
+        name: "Styled Components",
+        level: 4,
       },
     ],
     2: [
@@ -47,14 +43,6 @@ const abilitys = {
         level: 5,
       },
       {
-        name: "Git/Github",
-        level: 4,
-      },
-      {
-        name: "PHP",
-        level: 2,
-      },
-      {
         name: "SQL",
         level: 2,
       },
@@ -64,8 +52,12 @@ const abilitys = {
       },
       {
         name: "C++",
-        level: 2,
+        level: 3,
       },
+      {
+      name: "C#",
+        level: 3,
+    }
     ],
   };
   

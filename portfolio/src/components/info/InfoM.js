@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import InfoItemM from "./InfoMItem"; 
 import subheadingsData from "./InfosubheadingsData";
 import InfoSubheading from "./InfoSubheading";
+import "../styles/infoM.css"
 
 export default class InfoMenu extends Component {
   constructor(props) {
@@ -41,7 +42,8 @@ export default class InfoMenu extends Component {
         <div className="InfoBackground">
         <div className="mInfo">
         
-            <h3>{MTitle}</h3>
+            <h3 className="MTitle">{MTitle}</h3>
+            
           {subheadings.map((subheading, index) => (
             <InfoSubheading
               key={index}

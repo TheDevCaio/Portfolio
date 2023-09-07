@@ -6,6 +6,7 @@ import Info from './components/info/Info';
 import Abilitys from './components/abilitys/Abilitys';
 import GameIndex from './components/gameIndex/GameIndex';
 import Projects from './components/projects/ProjectsM';
+import MyContacts from './components/contact/MyContacts';
 
 const App = () => {
   return (
@@ -62,6 +63,7 @@ const App = () => {
           path="contact"
           element={
             <>
+              <MyContacts/>
               <NavBar /> 
               <BackgroundMain />
             </>
