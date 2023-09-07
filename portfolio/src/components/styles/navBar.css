@@ -29,17 +29,21 @@
   }
   
   .nav-contact {
-    transform: TranslateX(+22rem);
+    transform: translateX(22rem); /* "TranslateX" deve ser em minúsculas */
   }
 
   .nav-skills-contact {
-    transform: TranslateX(+22rem);
+    transform: translateX(+22rem);
   }
 
 
   .nav-contact {
-    transform: translateX(23rem);
+    transform: translateX(23rem) !important;
   }
+
+
+
+
   a {
     width: 3.125rem;
     display: flex;

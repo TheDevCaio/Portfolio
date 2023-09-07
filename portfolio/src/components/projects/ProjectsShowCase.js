@@ -5,11 +5,13 @@ import CloudParking from "../../assets/imgCloudParking.PNG";
 import ClassPlay from "../../assets/imgClassPlay.PNG"
 import MysticCardspaceElementalBattle  from "../../assets/Mystic.PNG"
 import ChatBot from "../../assets/ChatBot.PNG"
+import SistemadeAluguel from "../../assets/SistemadeAluguel.png"
 
 const CHB = ChatBot;
 const CdP = CloudParking;
 const ClP = ClassPlay;
 const ElM = MysticCardspaceElementalBattle;
+const SaV = SistemadeAluguel;
 
 const ProjectsShowcase = () => {
   const projects = [
@@ -45,6 +47,15 @@ const ProjectsShowcase = () => {
       imageSrc: CdP,
       description: "Backend system for parking meters or other services for leasing/renting purposes.",
       tecnologies: "Tecnologies: Spring Boot, DB (Postgree), Model MVC, Unitary Tests and a Beta Payment System.",
+    },
+
+    {
+      id: 5,
+      title: "Sistema de Aluguel de Veículos",
+      link: "https://github.com/TheDevCaio/TheDevCaio-SistemaDeAluguel-Veiculos",
+      imageSrc: SaV,
+      description: "A Vehicle Rental System that contains search, insertion, date manipulation, payment dashboard and other things written in the documentation.",
+      tecnologies: "Tecnologies: C#, .Net, Windows Form.",
     },
   ];
 
