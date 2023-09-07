@@ -24,7 +24,8 @@
   }
   
   .nav-projects {
-    transform: translateX(-10.94rem);
+    transform: translateX(-8.94rem);
+    margin-block-start: 100px;
     left: 40rem;
   }
   
@@ -41,9 +42,6 @@
   .nav-contact {
     transform: translateX(23rem) !important;
   }
-
-
-
 
   a {
     width: 3.125rem;

@@ -12,13 +12,17 @@ export default function Nav() {
   const getNav = () => {
     switch (position.pathname) {
       case "/":
-        return "nav-about";
+      return "nav-about";
       case "/skills":
-        return "nav-skills";
+      return "nav-skills";
       case "/projects":
-        return "nav-projects";
+      return "nav-projects";
       case "/contact":
-        return "nav-contact";
+      return "nav-contact";
+      case "/skills/contact":
+      return "nav-contact";
+      case "/projects/contact":
+      return "nav-contact";
       default:
         return "";
     };

@@ -53,8 +53,9 @@ const App = () => {
           path="skills/contact"
           element={
             <>
+
              <MyContacts/>
-              <NavBar  /> 
+             <NavBar className="nav-contact"/> 
               <BackgroundMain />
             </>
           }
