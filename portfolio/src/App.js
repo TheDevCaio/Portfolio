@@ -42,6 +42,7 @@ const App = () => {
           path="/projects/contact"
           element={
             <>
+              <MyContacts/>
               <NavBar className="nav-contact"/> 
               <BackgroundMain />
             </>
@@ -52,6 +53,7 @@ const App = () => {
           path="skills/contact"
           element={
             <>
+             <MyContacts/>
               <NavBar  /> 
               <BackgroundMain />
             </>
