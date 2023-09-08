@@ -44,7 +44,6 @@ export default function Nav() {
   };
 
   const navPosition = getNav();
-  const pageTitle = getTitle();
 
   const isCurrentPage = (navClass) => {
     return navClass === navPosition;
