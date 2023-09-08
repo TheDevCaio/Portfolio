@@ -38,12 +38,12 @@ export default class AbilityMenu extends Component {
 
     render() {
     const { activeMItem } = this.state;
-    const menuItems = ["FRONT-END", "BACK-END"];
+    const menuItems = ["FRONT-END","BACK-END"];
     return (
       <div className="ability-menu">
         {menuItems.map((item, index) => (
           <div
-            key={index}
+          key={index}
             className={classNames("ability-item", {
               activeAbility: activeMItem === index + 1, })}
             onClick={() => this.handleMItemClick(index + 1)}>
