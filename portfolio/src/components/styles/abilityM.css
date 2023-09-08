@@ -97,16 +97,17 @@
       border-style: solid;
       border-width: 2px;
       border-color: #000000; /* Cor neon (violeta) */
-      margin-left: 12vw;
+      margin-left: 10vw;
       transform: translateY(127vw);
       text-align: center;
       border-radius: 15%;
       color: #000000; /* Cor neon (violeta) para o texto */
-      background-color: #8b0000; /* Cor de fundo vinho */
+      background-color: rgba(200, 24, 24, 0.852); /* Cor de fundo vinho */
       padding: 5px 10px; /* Espaçamento interno para torná-lo mais visível */
       font-size: 1rem; /* Tamanho de fonte menor */
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto neon */
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra do elemento neon */
+      opacity: 80%;
   }
  
     .level-point {
